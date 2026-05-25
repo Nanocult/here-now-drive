@@ -71,18 +71,18 @@
 ### Option 1: BRAT (Recommended)
 1. Install the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat)
 2. Open BRAT settings → `Add a beta plugin`
-3. Paste: `https://github.com/Nanocult/here-now-sync`
+3. Paste: `https://github.com/Nanocult/here-now-drive`
 4. Enable in Community Plugins
 
 ### Option 2: Manual
-1. Download the latest release (`here-now-sync.zip`)
-2. Extract to `.obsidian/plugins/here-now-sync/` in your vault
+1. Download the latest release (`here-now-drive.zip`)
+2. Extract to `.obsidian/plugins/here-now-drive/` in your vault
 3. Enable in `Settings → Community Plugins`
 
 ### Option 3: Development
 ```bash
-git clone https://github.com/Nanocult/here-now-sync.git
-cd here-now-sync
+git clone https://github.com/Nanocult/here-now-drive.git
+cd here-now-drive
 npm install
 npm run build
 ```
