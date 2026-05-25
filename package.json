@@ -1,0 +1,42 @@
+{
+  "name": "here-now-sync",
+  "version": "0.0.8",
+  "description": "Obsidian plugin to sync with here.now Drives and Sites",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build:ts": "tsc -noEmit -skipLibCheck",
+    "build:esbuild": "node esbuild.config.mjs production",
+    "build": "node esbuild.config.mjs production",
+    "postbuild": "node -e \"const fs=require('fs'); const path=require('path'); const dist=path.join(__dirname,'dist'); if(!fs.existsSync(dist)){fs.mkdirSync(dist,{recursive:true});console.log('📁 Created dist folder');} fs.copyFileSync(path.join(__dirname,'manifest.json'),path.join(dist,'manifest.json')); fs.copyFileSync(path.join(__dirname,'styles.css'),path.join(dist,'styles.css')); console.log('📄 manifest.json and styles.css copied to dist/');\"",
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "lint": "eslint src --ext .ts",
+    "test": "jest",
+    "watch:esbuild": "node esbuild.config.mjs",
+    "watch:css": "cpy styles.css .obsidian\\plugins\\here-now-sync\\styles.css --watch"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "here.now",
+    "sync",
+    "backup",
+    "publish"
+  ],
+  "author": "Nanocult",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "esbuild": "^0.28.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "minimatch": "^9.0.3"
+  }
+}

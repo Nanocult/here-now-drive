@@ -1,0 +1,11 @@
+{
+  "id": "here-now-sync",
+  "name": "Here.Now Sync Sites-Drives",
+  "version": "0.0.8",
+  "minAppVersion": "1.5.0",
+  "description": "Bidirectional sync between vault and here.now Drives/Sites with periodic sync, offline queue, and conflict resolution.",
+  "author": "Nanocult",
+  "authorUrl": "https://github.com/Nanocult",
+  "isDesktopOnly": false,
+  "fundingUrl": "https://github.com/sponsors/Nanocult"
+}
