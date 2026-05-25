@@ -546,7 +546,7 @@ export class HereNowSyncSettingTab extends PluginSettingTab {
     containerEl.createEl('hr');
     const footer = containerEl.createEl('p', { cls: 'mod-muted' });
     footer.innerHTML = `
-      Obsidian <a href="https://github.com/Nanocult/here-now-sync" target="_blank">here.now Sync</a> Plugin v${this.plugin.manifest.version} • 
+      Obsidian <a href="https://github.com/Nanocult/here-now-drive" target="_blank">Here.Now Drive</a> Plugin v${this.plugin.manifest.version} • 
       <a href="https://here.now/docs" target="_blank">here.now Docs</a> • 
       <a href="https://docs.obsidian.md" target="_blank">Obsidian Dev Docs</a>
     `;
